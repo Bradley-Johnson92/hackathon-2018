@@ -397,7 +397,7 @@ function displayVideo(num)
         {
             i++;
         }
-    }
+    } 
 
     let videoObject = videoList[i];
     let videoSnippet = videoObject.snippet;
