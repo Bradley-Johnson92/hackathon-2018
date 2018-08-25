@@ -347,6 +347,7 @@ let videoRef = document.getElementById("videoRef");
 
 let previousButton = document.getElementById("previous");
 let nextButton = document.getElementById("next");
+let randomButton = document.getElementById("random");
 
 
 let linkEmbed = "https://www.youtube.com/embed/";
@@ -407,8 +408,14 @@ displayVideo(0);
 previousButton.addEventListener("click", function() { 
     displayVideo(-1);
  });
- 
+
  nextButton.addEventListener("click", function() { 
     displayVideo(1);
  });
+
+ randomButton.addEventListener("click", function()
+{
+    i = Math.floor(Math.random() * 10);
+    displayVideo(0);
+});
 
