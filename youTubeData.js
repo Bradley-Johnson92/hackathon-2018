@@ -344,36 +344,71 @@ const youTubeData = {
 let bodyTitle = document.getElementById("videoTitle");
 let bodyDescription = document.getElementById("videoDescription");
 let videoRef = document.getElementById("videoRef");
-let videoEmbed = document.getElementById("videoEmbed");
 
-let linkString = "https://www.youtube.com/watch?v=";
+let previousButton = document.getElementById("previous");
+let nextButton = document.getElementById("next");
+
+
 let linkEmbed = "https://www.youtube.com/embed/";
+let currentLink = "";
 let i = 0;
 
 
 let videoList = youTubeData.items;
 
+console.log(videoList);
+
+function displayVideo(num)
+ {
+    if(num === -1)
+    {
+        if(i === 0)
+        {
+            i = videoList.length - 1;
+        }
+        else
+        {
+            i--;
+        }   
+    }
+    else if(num === 1)
+    {
+        if(i === videoList.length - 1)
+        {
+            i = 0;
+        }
+        else
+        {
+            i++;
+        }
+    }
+
     let videoObject = videoList[i];
     let videoSnippet = videoObject.snippet;
-    let videoThumbnail = videoSnippet.thumbnails;
-    let videoRes = videoThumbnail.high;
 
 
     let videoTitle = videoSnippet.title;
     let videoDescription = videoSnippet.description;
-    let videoImage = videoRes.url;
     //GET link to video
     let id = videoObject.id;
     let videoID = id.videoId;
-    linkString += videoID;
-    linkEmbed += videoID;
+    currentLink = linkEmbed + videoID;
 
     console.log(videoTitle);
     console.log(videoDescription);
-    console.log(videoImage);
 
     bodyTitle.innerHTML = videoTitle;
     bodyDescription.innerHTML = videoDescription;
-    videoRef.src = linkEmbed;
-    
+    videoRef.src = currentLink;
+ }
+
+displayVideo(0);
+
+previousButton.addEventListener("click", function() { 
+    displayVideo(-1);
+ });
+ 
+ nextButton.addEventListener("click", function() { 
+    displayVideo(1);
+ });
 
