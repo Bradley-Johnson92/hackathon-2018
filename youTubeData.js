@@ -341,3 +341,39 @@ const youTubeData = {
     ]
 };
 
+let bodyTitle = document.getElementById("videoTitle");
+let bodyDescription = document.getElementById("videoDescription");
+let videoRef = document.getElementById("videoRef");
+let videoEmbed = document.getElementById("videoEmbed");
+
+let linkString = "https://www.youtube.com/watch?v=";
+let linkEmbed = "https://www.youtube.com/embed/";
+let i = 0;
+
+
+let videoList = youTubeData.items;
+
+    let videoObject = videoList[i];
+    let videoSnippet = videoObject.snippet;
+    let videoThumbnail = videoSnippet.thumbnails;
+    let videoRes = videoThumbnail.high;
+
+
+    let videoTitle = videoSnippet.title;
+    let videoDescription = videoSnippet.description;
+    let videoImage = videoRes.url;
+    //GET link to video
+    let id = videoObject.id;
+    let videoID = id.videoId;
+    linkString += videoID;
+    linkEmbed += videoID;
+
+    console.log(videoTitle);
+    console.log(videoDescription);
+    console.log(videoImage);
+
+    bodyTitle.innerHTML = videoTitle;
+    bodyDescription.innerHTML = videoDescription;
+    videoEmbed.src = linkEmbed;
+    
+
