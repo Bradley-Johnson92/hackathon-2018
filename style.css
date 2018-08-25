@@ -35,11 +35,11 @@ color: #FFFFFF;
 
 #videoTitle {
     color:rgb(212, 32, 32);
-    font-size:40px;
+    font-size:35px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    width: 50%;
-    margin: 10px auto;
+    width: 85%;
+    margin: 0px auto;
 }
 
 #videoRef {
@@ -47,7 +47,7 @@ color: #FFFFFF;
     margin-left: auto;
     margin-right: auto;
     height: 350px;
-    width: 600px;
+    width: 650px;
     }
 
 #videoDescription {
@@ -60,14 +60,26 @@ color: #FFFFFF;
 
 button {
     
-        color: rgb(255, 255, 255); font-size: 30px; line-height: 30px; padding: 18px; border-radius: 11px; font-family: Georgia, serif; font-weight: 400; text-decoration: none solid rgb(68, 68, 68); font-style: normal; font-variant: small-caps; text-transform: capitalize; background-color: #144E75; box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+        color: rgb(255, 255, 255); font-size: 30px; line-height: 30px; padding: 18px; border-radius: 11px; font-family: Georgia, serif; font-weight: 400; text-decoration: none solid rgb(68, 68, 68); font-style: normal; font-variant: small-caps; text-transform: capitalize; background-color: #144E75; box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
+        width: 200px;}
         .myButton:hover {
         background: #1C6EA4; }
         .myButton:active {
         background: #144E75; 
-        
+        width: 200px;
        
 }
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: rgb(14, 58, 87);
+    transform: translateY(10px);
+}
+
 h3{
     text-align: center;
+    word-spacing: 50px;
 }

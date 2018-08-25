@@ -341,14 +341,29 @@ const youTubeData = {
     ]
 };
 
+let movieInfo = [
+    "tt5220122/?ref_=nv_sr_1",
+    "tt7334528/?ref_=nv_sr_1",
+    "tt2179116/?ref_=fn_al_tt_1",
+    "tt6921996/?ref_=nv_sr_1",
+    "tt3513498/?ref_=nv_sr_1",
+    "tt6182908/?ref_=nv_sr_1",
+    "tt1714206/?ref_=nv_sr_1",
+    "tt2150369/?ref_=fn_al_tt_1",
+    "tt5220122/?ref_=nv_sr_1",
+    "tt2709692/?ref_=nv_sr_1"
+];
+
 let bodyTitle = document.getElementById("videoTitle");
 let bodyDescription = document.getElementById("videoDescription");
 let videoRef = document.getElementById("videoRef");
+let videoInfo = document.getElementById("videoInfo");
 
 let previousButton = document.getElementById("previous");
 let nextButton = document.getElementById("next");
 let randomButton = document.getElementById("random");
 
+let imdbLink = "https://www.imdb.com/title/";
 
 let linkEmbed = "https://www.youtube.com/embed/";
 let currentLink = "";
@@ -394,6 +409,7 @@ function displayVideo(num)
     let id = videoObject.id;
     let videoID = id.videoId;
     currentLink = linkEmbed + videoID;
+    videoInfo.href = imdbLink + movieInfo[i];
 
     console.log(videoTitle);
     console.log(videoDescription);
@@ -413,8 +429,7 @@ previousButton.addEventListener("click", function() {
     displayVideo(1);
  });
 
- randomButton.addEventListener("click", function()
-{
+ randomButton.addEventListener("click", function() {
     i = Math.floor(Math.random() * 10);
     displayVideo(0);
 });
