@@ -374,6 +374,6 @@ let videoList = youTubeData.items;
 
     bodyTitle.innerHTML = videoTitle;
     bodyDescription.innerHTML = videoDescription;
-    videoEmbed.src = linkEmbed;
+    videoRef.src = linkEmbed;
     
 
