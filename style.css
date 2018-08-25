@@ -38,8 +38,9 @@ color: #FFFFFF;
     font-size:35px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    width: 85%;
+    width: 65%;
     margin: 0px auto;
+    padding: 10px;
 }
 
 #videoRef {
@@ -55,6 +56,7 @@ color: #FFFFFF;
     font-size: 20px;
     width: 40%;
     margin: 0 auto;
+    padding: 10px;
    
 }
 
