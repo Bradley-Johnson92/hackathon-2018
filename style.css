@@ -11,19 +11,19 @@ assumes h1 is the website title?
 body{
     
     font-family :Arial, Helvetica, sans-serif;
-    
+    margin: 0px auto;
 background-color: #F2F7F2;
 }
 
 h1 {
-    font-size:150px;
+    font-size:60px;
     text-align: center;
     
-    margin-top:30px;
-    margin-bottom:30px;
+    margin-top:20px;
+    margin-bottom:20px;
     padding: 10;
     border: 80px;
-    letter-spacing: 10px;
+    letter-spacing: 2px;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
 background: #996D6D;
@@ -35,25 +35,25 @@ color: #FFFFFF;
 
 #videoTitle {
     color:rgb(212, 32, 32);
-    font-size:70px;
+    font-size:40px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
     width: 50%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 #videoRef {
     display: block;
     margin-left: auto;
     margin-right: auto;
-height: 800px;
-width: 2000px;
+    height: 350px;
+    width: 600px;
     }
 
 #videoDescription {
     color: darkslategray;
-    font-size: 40px;
-    width: 50%;
+    font-size: 20px;
+    width: 40%;
     margin: 0 auto;
    
 }
