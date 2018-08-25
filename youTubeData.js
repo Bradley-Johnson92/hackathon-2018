@@ -330,7 +330,7 @@ const youTubeData = {
                     },
                     "high": {
                         "url": "https://i.ytimg.com/vi/knFho9WzLJQ/hqdefault.jpg",
-                        "width": 480,
+                        "wlidth": 480,
                         "height": 360
                     }
                 },
@@ -340,3 +340,4 @@ const youTubeData = {
         }
     ]
 };
+
