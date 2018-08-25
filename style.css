@@ -9,35 +9,52 @@ assumes h1 is the website title?
 */
 
 body{
-    margin: 0px auto;
+    
     font-family :Arial, Helvetica, sans-serif;
+    
+
 }
 
 h1 {
-    font-size:80px;
+    font-size:150px;
     text-align: center;
-    color: #001f3f;
-    margin-top:0px;
-    margin-bottom:0px;
+    
+    margin-top:30px;
+    margin-bottom:30px;
     padding: 10;
-    border: 20px;
+    border: 80px;
     letter-spacing: 10px;
     font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+background: #996D6D;
+text-shadow: #474747 3px 5px 2px;
+color: #FFFFFF;
+
+
 }
 
 #videoTitle {
-    color:#2E5266;
-    font-size:40px;
+    color:rgb(212, 32, 32);
+    font-size:70px;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+    
 }
 
-#videoImage {
-    width: 50%;
+#videoRef {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+height: 800px;
+width: 2000px;
     }
 
 #videoDescription {
     color: darkslategray;
-    font-size: 16px;
+    font-size: 40px;
+    width: 50%;
+    margin: 0 auto;
+   
 }
 
 .button {
