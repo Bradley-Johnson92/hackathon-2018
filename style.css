@@ -1,4 +1,54 @@
-body
-{
+/*need style for ids = videoTitle, videoImage, videoDescription
+style for classes = button (all buttons get class of button?)
+assumes h1 is the website title?
+*/
+
+
+/* for h1 font, need to add to html file
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+*/
+
+body{
     margin: 0px auto;
+    font-family :Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size:80px;
+    text-align: center;
+    color: #001f3f;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding: 10;
+    border: 20px;
+    letter-spacing: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#videoTitle {
+    color:#2E5266;
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#videoImage {
+    width: 50%;
+    }
+
+#videoDescription {
+    color: darkslategray;
+    font-size: 16px;
+}
+
+.button {
+ background-color: #008b8b;
+ border: none;
+ color: white;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin: 4px 2px;
+ cursor: pointer;
 }
